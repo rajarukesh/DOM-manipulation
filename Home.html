@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" title="description">
+    <title>Meta Tags Toolkit</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="main_log">
+            <div class="logo"></div>
+            <h4 class="logo-heading">Meta Tags</h4>
+        </div>
+        <div class="font_gen_div">
+            <a class="font_gen_href" href="https://metatags.io/font-generator">Font Generator</a>
+        </div>
+    </div>
+
+
+    <div class="first_sec">
+        <h1 class="text-center">Meta Tags Toolkit</h1>
+        <p class="text_center">Preview, Edit, and Generate</p>
+    </div>
+    <div class="main-link">
+        <input class="link-input" type="text" id="meta-search-link" value="https://metatags.io/">
+        <input class="submit" type="submit" value="Parse Meta Data">
+    </div>
+
+
+    <div class="main_div">
+
+        <!-- FIRST SECTION -->
+
+        <div class="img_box_section">
+
+            <div class="sec_start">
+                <h3 class="meta_heading">Metadata</h3>
+
+                <div class="img_space">
+                    <label for="imageInput" style="color: #a3b3ca;">Image</label>
+                    <span class="box_counts" style="color: #a3b3ca;">Recommend 1200×628</span>
+                </div>
+                <div class="upload_box">
+                    <div id="imagePreview">
+                        <input type="file" onchange="fileChange(event)" id="imageInput" class="image_box" multiple>
+                        <span class="upload_arrow" id="arrow">&#129033;</span>
+                    </div>
+                    <div class="main-drag_drop">
+                        <span class="drag_drop">Drag & Drop or Click</span>
+                    </div>
+                </div>
+
+                <div class="text_count_space">
+                    <label  for="titleInput" style="color: #a3b3ca;" >Title</label>
+                    <span class="box_counts" id="title_text_count" style="color: #a3b3ca;">39</span>
+                </div>
+                <input type="text" id="titleInput" class="title_input" minlength="4" maxlength="50" value="Meta Tags — Preview, Edit and Generate">
+
+                    
+                <div class="text_count_space">
+                    <label for="descriptionInput" style="color: #a3b3ca;">Description</label>
+                    <span class="box_counts" id="description_text_count" style="color: #a3b3ca;">140</span>
+                </div>
+                <textarea id="descriptionInput" class="description_area" placeholder="" >With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!</textarea>
+                
+                <div class="get_code_button">
+                    <button id="get-code-button"><span class="icon">&lt;/&gt;</span> Get Code</button>
+                </div>
+                <div class="social_links">
+                    <div class="links_haeding">
+                        <h3>Official debuggers</h3>
+                    </div>
+                    <div class="links_text">
+                        <a href="http://">Facebook</a>
+                        <a href="http://">Twitter</a>
+                        <a href="http://">LinkedIn</a>
+                        <a href="http://">Structured Data</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- SECOND SECTION -->
+
+        <div class="preview-section">
+
+            <h4 class="preview_heading">Preview</h4>
+            <div id="previewGoogle">
+                <h5 style="color: #a3b3ca;">Google</h5>
+                <div>
+                    <span id="googleTitle" style="color: #1a0dab; cursor: pointer; letter-spacing: normal; font-size: 20px;">Meta Tags — Preview, Edit and Generate</span> <br>
+                    <div class="card-seo-google__url">
+                        <span class="" id="meta-link"
+                            style="color: #006621; font-weight: 600;">https://metatags.io/</span>
+                        <span class="card-seo-google__url-arrow"></span>
+                    </div>
+                    <span id="googleDescription">With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!</span>
+                </div>
+            </div>
+            <h5 style="color: #a3b3ca;">Twitter</h5>
+            <div id="previewTwitter">
+                <img id="twitterImage" class="img-call">
+                <div id="twitterText">
+                    <span style="font-weight: 700;" id="twitterTitle">Meta Tags — Preview, Edit and Generate</span>
+                    <span id="twitterDescription">With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!</span>
+                    <span style="color: #a3b3ca;">metatags.io</span>
+                </div>
+            </div>
+
+            <h5 style="color: #a3b3ca;">Slack</h5>
+            <div id="previewSlack">
+                <img id="slackImage" class="img-call">
+                <div id="slackText">
+                    <strong id="slackTitle">Meta Tags — Preview, Edit and Generate</strong> <br>
+                    <span id="slackDescription">With Meta Tags you can edit and experiment with your content then
+                        preview how your webpage will look on Google, Facebook, Twitter and more!</span>
+                        <span style="color: #a3b3ca;">metatags.io</span>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="home.js"></script>
+
+
+</body>
+
+</html>
